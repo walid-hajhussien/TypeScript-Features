@@ -1,0 +1,22 @@
+{
+  "name": "typescript-features",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walid-hajhussien/TypeScript-Features.git"
+  },
+  "author": "walid HajHussien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walid-hajhussien/TypeScript-Features/issues"
+  },
+  "homepage": "https://github.com/walid-hajhussien/TypeScript-Features#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
