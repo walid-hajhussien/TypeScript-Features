@@ -54,3 +54,15 @@ const role2: "admin" | "user" = "user";
 // Aliases
 type Combined = string | number;
 let age3: Combined = 3;
+
+// function return type
+function print ():void {
+console.log(55555)
+}
+function add(x:number):number {
+return x
+}
+function print2 ():undefined {
+  console.log(55555)
+  return
+}
