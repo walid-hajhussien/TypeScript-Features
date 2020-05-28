@@ -40,3 +40,39 @@ var value = 5;
 var name2 = "walid";
 var role2 = "user";
 var age3 = 3;
+// function return type
+function print3() {
+    console.log(55555);
+}
+function add(x) {
+    return x;
+}
+function print2() {
+    console.log(55555);
+    return;
+}
+// function as type
+var canAdd = print2;
+// function as type with arrow function
+var canAdd2;
+canAdd2 = add;
+// function type with callback
+function sum(n1, n2, cb) {
+    var result = n1 + n2;
+    cb(result);
+}
+sum(1, 2, function (result) {
+    console.log(result);
+});
+// unknown
+var result1;
+result1 = 'waled';
+if (typeof result1 === 'string') {
+    var result3 = result1;
+}
+// Never
+function error(message) {
+    throw { error: message };
+}
+var err = error('dddd');
+console.log(err);

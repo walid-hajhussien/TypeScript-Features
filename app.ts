@@ -18,8 +18,8 @@ let result: boolean = true;
 //object
 
 let person: { name: string; age: number } = {
-  name: "walid",
-  age: 30,
+    name: "walid",
+    age: 30,
 };
 
 // array
@@ -32,12 +32,12 @@ let role: [number, string] = [1, "admin"];
 
 //Enum
 enum Role2 {
-  ADMIN,
-  USER,
+    ADMIN,
+    USER,
 } // Role2.ADMIN = 0
 enum Role3 {
-  ADMIN = "ADMIN",
-  USER = "USER",
+    ADMIN = "ADMIN",
+    USER = "USER",
 }
 
 // Any
@@ -56,13 +56,46 @@ type Combined = string | number;
 let age3: Combined = 3;
 
 // function return type
-function print ():void {
-console.log(55555)
+function print3(): void {
+    console.log(55555)
 }
-function add(x:number):number {
-return x
+
+function add(x: number): number {
+    return x
 }
-function print2 ():undefined {
-  console.log(55555)
-  return
+
+function print2(): undefined {
+    console.log(55555)
+    return
 }
+
+// function as type
+let canAdd: Function = print2;
+
+// function as type with arrow function
+let canAdd2: (n: number) => number;
+canAdd2 = add;
+
+// function type with callback
+function sum(n1: number, n2: number, cb: (x: number) => void): void {
+    let result = n1 + n2;
+    cb(result)
+}
+
+sum(1, 2, (result) => {
+    console.log(result);
+});
+
+// unknown
+let result1: unknown;
+result1 = 'waled';
+if (typeof result1 === 'string') {
+    let result3: string = result1;
+}
+
+// Never
+function error(message: string):never {
+    throw {error: message}
+}
+
+
