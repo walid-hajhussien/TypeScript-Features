@@ -1,3 +1,4 @@
+"use strict";
 /*     TypeScript Basics & Basic Types         */
 //-	Type Assignment
 var age = 5;
@@ -12,7 +13,7 @@ var result = true;
 //object
 var person = {
     name: "walid",
-    age: 30
+    age: 30,
 };
 // array
 var array1 = ["walid"];
@@ -74,5 +75,3 @@ if (typeof result1 === 'string') {
 function error(message) {
     throw { error: message };
 }
-var err = error('dddd');
-console.log(err);
