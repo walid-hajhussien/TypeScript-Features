@@ -1,2 +1,5 @@
-console.log("add.............")
-let a=5
+const button = document.querySelector("button")!;
+
+button.addEventListener('click',()=>{
+console.log("click")
+})

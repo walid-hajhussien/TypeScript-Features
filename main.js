@@ -1,3 +1,5 @@
 "use strict";
-console.log("add.............");
-var a = 5;
+var button = document.querySelector("button");
+button.addEventListener('click', function () {
+    console.log("click");
+});
