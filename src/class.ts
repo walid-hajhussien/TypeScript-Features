@@ -6,9 +6,22 @@ And we then called this instances off the classes.
 
 // class
 class Department {
-    name: string;
+    public name: string;
+    private employee: string[];
 
     constructor(name: string) {
-        this.name = name
+        this.name = name;
+        this.employee = [];
     }
+
+    addEmployee(employee: string) {
+        this.employee.push(employee)
+    }
+
+    describe(this: Department) {
+        console.log("Name", this.name)
+    }
+
 }
+
+
