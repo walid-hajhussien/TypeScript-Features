@@ -6,12 +6,12 @@ And we then called this instances off the classes.
 
 // class
 class Department {
-    public name: string;
     private employee: string[];
+    private readonly id: number;
 
-    constructor(name: string) {
-        this.name = name;
+    constructor(public name: string, id: number) {
         this.employee = [];
+        this.id = id;
     }
 
     addEmployee(employee: string) {
