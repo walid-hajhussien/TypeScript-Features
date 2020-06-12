@@ -5,8 +5,8 @@ And we then called this instances off the classes.
 * */
 
 // class
-class Department {
-    private employee: string[];
+export class Department {
+    protected employee: string[];
     private readonly id: number;
 
     constructor(public name: string, id: number) {
@@ -24,11 +24,5 @@ class Department {
 
 }
 
-// inheritance 
-class ITdepartment extends Department {
-    constructor(id: number, private admins: string[] = []) {
-        super('IT', id)
-    }
-}
-const it1 = new ITdepartment(1)
+
 
