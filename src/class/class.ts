@@ -5,9 +5,10 @@ And we then called this instances off the classes.
 * */
 
 // class
-export class Department {
+class Department {
     protected employee: string[];
     private readonly id: number;
+    private code: number = 0
 
     constructor(public name: string, id: number) {
         this.employee = [];
