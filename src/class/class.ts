@@ -10,6 +10,7 @@ class Department {
     private readonly id: number;
     private code: number = 0
 
+    // the first method will be call 
     constructor(public name: string, id: number) {
         this.employee = [];
         this.id = id;
