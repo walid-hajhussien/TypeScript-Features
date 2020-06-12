@@ -24,4 +24,11 @@ class Department {
 
 }
 
+// inheritance 
+class ITdepartment extends Department {
+    constructor(id: number, private admins: string[] = []) {
+        super('IT', id)
+    }
+}
+const it1 = new ITdepartment(1)
 
