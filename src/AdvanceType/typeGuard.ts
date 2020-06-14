@@ -1,3 +1,4 @@
+
 //  Type Guards allow you to narrow down the type of an object within a conditional block
 
 type Fruit = {
@@ -26,7 +27,7 @@ class B {
 
 
 // Guard type with Typeof
-function print1(data: All) {
+function printG1(data: All) {
     // you need to check which type
     //  Typeof
     if (typeof data === 'string') {
@@ -37,7 +38,7 @@ function print1(data: All) {
 
 }
 // Guard type with In
-function print2(data: allFruit) {
+function printG2(data: allFruit) {
     // you need to check which type
     //  in
     if (name in data) {
@@ -50,7 +51,7 @@ function print2(data: allFruit) {
 
 // Guard type with instanceof
 
-function print3(data: A | B) {
+function printG3(data: A | B) {
     // you need to check which type
     //  instanceof
     if (data instanceof A) {
@@ -60,3 +61,4 @@ function print3(data: A | B) {
     }
 
 }
+
