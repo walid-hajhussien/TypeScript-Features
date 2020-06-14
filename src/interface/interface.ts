@@ -22,3 +22,13 @@ type PersonType = {
 }
     | { name: string }
 
+// optional member 
+interface Optional {
+    name?: string
+    id: number
+    greet?(): void;
+}
+
+class T1 implements Optional {
+    constructor(public id: number, public name?: string) { }
+}
